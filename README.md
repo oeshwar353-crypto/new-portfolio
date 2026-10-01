@@ -13,9 +13,4 @@ Personal portfolio of **Om Eshwar Achary**, AI & Backend Developer based in Jaip
 - **Frontend**: Semantic HTML5, Vanilla CSS (Editorial Design System), JavaScript (ES6+)
 - **Typography**: Manrope, Newsreader, JetBrains Mono
 
-## Local Development
-Run locally with any static web server:
-```bash
-python -m http.server 8000
-```
-Open [http://localhost:8000](http://localhost:8000) in your browser.
+
