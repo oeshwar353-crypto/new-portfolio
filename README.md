@@ -1,4 +1,4 @@
-# Om Eshwar Achary (Omy) — Editorial Portfolio
+# Om Eshwar Achary (Omy) —  Portfolio
 
 Personal portfolio of **Om Eshwar Achary**, AI & Backend Developer based in Jaipur, India. Designed with warm editorial aesthetics, interactive project showcase carousels, responsive navigation, and high-resolution modal previews.
 
