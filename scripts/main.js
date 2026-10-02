@@ -453,7 +453,7 @@
   }
 
   // --------------------------------------------------------------------------
-  // 06. Single Image Lightbox Triggers (IRIS, ZENET, TECHVERSE)
+  // 06. Single Image Lightbox Triggers (IRIS, TECHVERSE)
   // --------------------------------------------------------------------------
   function initSingleLightboxes() {
     const singleTriggers = document.querySelectorAll('[data-lightbox-single]');
@@ -564,7 +564,7 @@
 
     // 2. Peek AI Carousel
     createShowcaseCarousel({
-      selector: '.peek-carousel:not(.zigsy-carousel):not(.briz-carousel)',
+      selector: '.peek-carousel:not(.zigsy-carousel):not(.briz-carousel):not(.reel-carousel)',
       prevBtnId: 'peek-prev-btn',
       nextBtnId: 'peek-next-btn',
       captionId: 'peek-slide-caption',
@@ -575,7 +575,7 @@
       autoPlayDelay: 4500
     });
 
-    // 2. Zigsy Carousel
+    // 3. Zigsy Carousel
     createShowcaseCarousel({
       selector: '.zigsy-carousel',
       prevBtnId: 'zigsy-prev-btn',
@@ -588,7 +588,20 @@
       autoPlayDelay: 5000
     });
 
-    // 3. Single Image Lightboxes (IRIS, Zenet, Techverse)
+    // 4. Reel Analyzer Carousel
+    createShowcaseCarousel({
+      selector: '.reel-carousel',
+      prevBtnId: 'reel-prev-btn',
+      nextBtnId: 'reel-next-btn',
+      captionId: 'reel-slide-caption',
+      counterId: 'reel-slide-counter',
+      zoomBtnId: 'reel-zoom-btn',
+      viewportId: 'reel-carousel-viewport',
+      badge: 'REEL ANALYZER // CONTENT AI',
+      autoPlayDelay: 4800
+    });
+
+    // 5. Single Image Lightboxes (IRIS, Techverse)
     initSingleLightboxes();
 
     // 4. The Journey Interactive Timeline Filter
@@ -596,6 +609,66 @@
 
     // 5. Interactive Skills & Engineering Inspector
     initSkillsInteractive();
+
+    // 6. Achievements Horizontal Carousel Track
+    initAchievementsCarousel();
   });
+
+  // --------------------------------------------------------------------------
+  // 09. Achievements Horizontal Carousel Track
+  // --------------------------------------------------------------------------
+  function initAchievementsCarousel() {
+    const track = document.getElementById('achievements-track');
+    const prevBtn = document.getElementById('achievements-prev-btn');
+    const nextBtn = document.getElementById('achievements-next-btn');
+    const counter = document.getElementById('achievements-counter');
+    const cards = document.querySelectorAll('.achievement-card');
+
+    if (!track || !cards.length) return;
+
+    function getCardWidth() {
+      const card = cards[0];
+      const gap = 28; // 1.75rem in pixels
+      return (card ? card.offsetWidth + gap : 360);
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        track.scrollBy({ left: -getCardWidth(), behavior: 'smooth' });
+      });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        track.scrollBy({ left: getCardWidth(), behavior: 'smooth' });
+      });
+    }
+
+    // Update counter on scroll
+    track.addEventListener('scroll', () => {
+      const scrollPos = track.scrollLeft;
+      const cardWidth = getCardWidth();
+      const activeIdx = Math.min(cards.length - 1, Math.max(0, Math.round(scrollPos / cardWidth)));
+      if (counter) {
+        counter.innerHTML = `<span class="text-burgundy">${String(activeIdx + 1).padStart(2, '0')}</span> / ${String(cards.length).padStart(2, '0')}`;
+      }
+    }, { passive: true });
+
+    // Lightbox click on achievement cards
+    cards.forEach(card => {
+      card.addEventListener('click', (e) => {
+        e.preventDefault();
+        const src = card.getAttribute('data-lightbox-src');
+        const badge = card.getAttribute('data-lightbox-badge') || 'ACHIEVEMENT';
+        const caption = card.getAttribute('data-lightbox-caption') || card.querySelector('.achievement-card-title')?.textContent || 'Achievement';
+        const alt = card.querySelector('img')?.getAttribute('alt') || caption;
+        if (src) {
+          lightboxModal.openSingle({ src, badge, caption, alt });
+        }
+      });
+    });
+  }
 
 })();

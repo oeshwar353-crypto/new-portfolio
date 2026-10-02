@@ -30,7 +30,7 @@
     href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&display=swap"
     rel="stylesheet">
 
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/main.css?v=2.4">
 </head>
 
 <body class="editorial-body">
@@ -54,8 +54,8 @@
         <ul class="nav-list">
           <li><a href="#about" class="nav-item">ABOUT</a></li>
           <li><a href="#work" class="nav-item">WORK</a></li>
-          <li><a href="#journey" class="nav-item">JOURNEY</a></li>
           <li><a href="#skills" class="nav-item">SKILLS</a></li>
+          <li><a href="#journey" class="nav-item">JOURNEY</a></li>
           <li><a href="#contact" class="nav-item">CONTACT</a></li>
         </ul>
       </nav>
@@ -80,8 +80,8 @@
         <ul class="mobile-links-list">
           <li><a href="#about" class="mobile-link"><span class="m-num">01</span> ABOUT</a></li>
           <li><a href="#work" class="mobile-link"><span class="m-num">02</span> WORK</a></li>
-          <li><a href="#journey" class="mobile-link"><span class="m-num">03</span> JOURNEY</a></li>
-          <li><a href="#skills" class="mobile-link"><span class="m-num">04</span> SKILLS</a></li>
+          <li><a href="#skills" class="mobile-link"><span class="m-num">03</span> SKILLS</a></li>
+          <li><a href="#journey" class="mobile-link"><span class="m-num">04</span> JOURNEY</a></li>
           <li><a href="#contact" class="mobile-link"><span class="m-num">05</span> CONTACT</a></li>
         </ul>
         <div class="drawer-footer">
@@ -132,7 +132,9 @@
               <span>VIEW MY WORK</span>
               <span class="btn-arrow" aria-hidden="true">&darr;</span>
             </a>
-            <a href="final resume om 2026.pdf" download="Om_Eshwar_Achary_Resume.pdf" class="btn-editorial btn-editorial-burgundy" target="_blank" rel="noopener noreferrer" aria-label="Download Resume (PDF)">
+            <a href="final resume om 2026.pdf" download="Om_Eshwar_Achary_Resume.pdf"
+              class="btn-editorial btn-editorial-burgundy" target="_blank" rel="noopener noreferrer"
+              aria-label="Download Resume (PDF)">
               <span>DOWNLOAD RESUME</span>
               <span class="btn-arrow" aria-hidden="true">&darr;</span>
             </a>
@@ -232,7 +234,7 @@
           <div class="about-col-right reveal-on-scroll">
 
             <p class="about-lead">
-              I'm Om Eshwar Achary, known as <span class="highlight-inline">Omy</span>.
+              I'm <span class="highlight-inline">Om Eshwar Achary</span>
             </p>
 
             <p class="about-body">
@@ -334,6 +336,12 @@
               <span>PostgreSQL</span>
               <span>Tailwind CSS</span>
             </div>
+            <div class="project-actions-row">
+              <span class="project-status-pill">
+                <span class="status-pulse-dot" aria-hidden="true"></span>
+                <span>PROJECT ONGOING &bull; GETTING READY</span>
+              </span>
+            </div>
           </div>
 
           <div class="project-visual-pane">
@@ -345,7 +353,8 @@
                 <div class="peek-carousel-bar">
                   <div class="carousel-status-indicator">
                     <span class="carousel-status-dot" aria-hidden="true"></span>
-                    <span class="carousel-caption" id="briz-slide-caption">01 // PLATFORM HERO &amp; TALENT NETWORK</span>
+                    <span class="carousel-caption" id="briz-slide-caption">01 // PLATFORM HERO &amp; TALENT
+                      NETWORK</span>
                   </div>
                   <div class="carousel-counter" id="briz-slide-counter">01 / 04</div>
                 </div>
@@ -353,11 +362,11 @@
                 <!-- Carousel Viewport & Slides Track -->
                 <div class="carousel-viewport" id="briz-carousel-viewport">
                   <div class="carousel-track" id="briz-carousel-track">
-                    <div class="carousel-slide active" data-index="0" data-caption="01 // PLATFORM HERO &amp; TALENT NETWORK"
+                    <div class="carousel-slide active" data-index="0"
+                      data-caption="01 // PLATFORM HERO &amp; TALENT NETWORK"
                       data-sub="Opportunity Matching &bull; 50+ Startups &bull; 1,000+ Students">
-                      <img src="assets/briz-1.png"
-                        alt="Briz Platform Landing Page - Where skills become opportunities" loading="lazy"
-                        class="carousel-img" />
+                      <img src="assets/briz-1.png" alt="Briz Platform Landing Page - Where skills become opportunities"
+                        loading="lazy" class="carousel-img" />
                     </div>
                     <div class="carousel-slide" data-index="1" data-caption="02 // WORKSPACE &amp; ANALYTICS"
                       data-sub="Internship Recommendations &bull; Profile Performance &bull; Historical Analytics">
@@ -373,9 +382,8 @@
                     </div>
                     <div class="carousel-slide" data-index="3" data-caption="04 // STUDENT INTERNSHIP DIRECTORY"
                       data-sub="Live Verified Listings &bull; Direct Apply &bull; Role Matching Feed">
-                      <img src="assets/briz-4.png"
-                        alt="Briz Student Workspace - Overview and Internship Directory" loading="lazy"
-                        class="carousel-img" />
+                      <img src="assets/briz-4.png" alt="Briz Student Workspace - Overview and Internship Directory"
+                        loading="lazy" class="carousel-img" />
                     </div>
                   </div>
 
@@ -443,8 +451,11 @@
             <span class="project-num">02</span>
             <div class="project-category-badge">AI &bull; COMPUTER VISION &bull; OCR</div>
             <h3 class="project-name">
-              <span>PEEK AI</span>
-              <span class="project-arrow-icon" aria-hidden="true">&rarr;</span>
+              <a href="https://github.com/oeshwar353-crypto/peek-ai" target="_blank" rel="noopener noreferrer"
+                class="project-title-link" aria-label="Peek AI GitHub Repository">
+                <span>PEEK AI</span>
+                <span class="project-arrow-icon" aria-hidden="true">&rarr;</span>
+              </a>
             </h3>
             <p class="project-lead">
               An AI-powered Instagram Reel analyzer and creator workspace .
@@ -466,6 +477,16 @@
               <span>OCR</span>
               <span>LLMs</span>
               <span>JavaScript</span>
+            </div>
+            <div class="project-actions-row">
+              <a href="https://github.com/oeshwar353-crypto/peek-ai" target="_blank" rel="noopener noreferrer"
+                class="project-action-link" aria-label="Peek AI GitHub Repository">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                </svg>
+                <span>VIEW ON GITHUB</span>
+                <span class="action-arrow">&rarr;</span>
+              </a>
             </div>
           </div>
 
@@ -566,8 +587,11 @@
             <span class="project-num">03</span>
             <div class="project-category-badge">MARKETPLACE &bull; COMMERCE</div>
             <h3 class="project-name">
-              <span>ZIGSY</span>
-              <span class="project-arrow-icon" aria-hidden="true">&rarr;</span>
+              <a href="https://github.com/oeshwar353-crypto/zigsy" target="_blank" rel="noopener noreferrer"
+                class="project-title-link" aria-label="Zigsy GitHub Repository">
+                <span>ZIGSY</span>
+                <span class="project-arrow-icon" aria-hidden="true">&rarr;</span>
+              </a>
             </h3>
             <p class="project-lead">
               A fashion discovery and rental platform built around Gen Z behavior and social discovery.
@@ -589,6 +613,16 @@
               <span>PostgreSQL</span>
               <span>Razorpay</span>
               <span>Mapbox</span>
+            </div>
+            <div class="project-actions-row">
+              <a href="https://github.com/oeshwar353-crypto/zigsy" target="_blank" rel="noopener noreferrer"
+                class="project-action-link" aria-label="Zigsy GitHub Repository">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                </svg>
+                <span>VIEW ON GITHUB</span>
+                <span class="action-arrow">&rarr;</span>
+              </a>
             </div>
           </div>
 
@@ -703,10 +737,147 @@
         </article>
 
 
-        <!-- PROJECT 04: PROJECT IRIS -->
-        <article class="editorial-project-row reveal-on-scroll" data-project="project-iris">
+        <!-- PROJECT 04: REEL ANALYZER -->
+        <article class="editorial-project-row reveal-on-scroll" data-project="reel-analyzer">
           <div class="project-info-pane">
             <span class="project-num">04</span>
+            <div class="project-category-badge">AI &bull; COMPUTER VISION &bull; CONTENT TOOLS</div>
+            <h3 class="project-name">
+              <a href="https://github.com/oeshwar353-crypto/reel-analyzer" target="_blank" rel="noopener noreferrer"
+                class="project-title-link" aria-label="Reel Analyzer GitHub Repository">
+                <span>REEL ANALYZER</span>
+                <span class="project-arrow-icon" aria-hidden="true">&rarr;</span>
+              </a>
+            </h3>
+            <p class="project-lead">
+              An AI-powered tool that analyzes Instagram Reels and extracts insights from visual content, captions, and
+              audio to help creators understand and improve their content.
+            </p>
+            <div class="project-meta-table">
+              <div class="meta-row">
+                <span class="mr-label">ROLE</span>
+                <span class="mr-val">AI Developer</span>
+              </div>
+              <div class="meta-row">
+                <span class="mr-label">FOCUS</span>
+                <span class="mr-val">Video Analysis &amp; Content Intelligence</span>
+              </div>
+            </div>
+            <div class="project-tech-pills">
+              <span>Python</span>
+              <span>FastAPI</span>
+              <span>Computer Vision</span>
+              <span>OCR</span>
+              <span>LLM APIs</span>
+              <span>AI</span>
+            </div>
+            <div class="project-actions-row">
+              <a href="https://github.com/oeshwar353-crypto/reel-analyzer" target="_blank" rel="noopener noreferrer"
+                class="project-action-link" aria-label="Reel Analyzer GitHub Repository">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                </svg>
+                <span>VIEW ON GITHUB</span>
+                <span class="action-arrow">&rarr;</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-visual-pane">
+            <div class="visual-canvas reel-canvas" id="reel-carousel-container">
+              <div class="visual-badge">REEL ANALYZER // CONTENT AI</div>
+
+              <div class="peek-carousel reel-carousel" role="region" aria-label="Reel Analyzer Showcase Carousel">
+                <!-- Carousel Header / Bar -->
+                <div class="peek-carousel-bar">
+                  <div class="carousel-status-indicator">
+                    <span class="carousel-status-dot" aria-hidden="true"></span>
+                    <span class="carousel-caption" id="reel-slide-caption">01 // REEL &amp; SCREENSHOT UPLOAD</span>
+                  </div>
+                  <div class="carousel-counter" id="reel-slide-counter">01 / 03</div>
+                </div>
+
+                <!-- Carousel Viewport & Slides Track -->
+                <div class="carousel-viewport" id="reel-carousel-viewport">
+                  <div class="carousel-track" id="reel-carousel-track">
+                    <div class="carousel-slide active" data-index="0" data-caption="01 // REEL &amp; SCREENSHOT UPLOAD"
+                      data-sub="Multi-Platform Upload &bull; Caption Input &bull; Drag &amp; Drop">
+                      <img src="assets/reel-analyzer-1.png"
+                        alt="Reel Analyzer - Upload a screenshot and understand what is inside" loading="lazy"
+                        class="carousel-img" />
+                    </div>
+                    <div class="carousel-slide" data-index="1" data-caption="02 // SCREENSHOT SELECTION &amp; ANALYSIS"
+                      data-sub="Visual Content Preview &bull; Multi-Modal OCR Prep &bull; One-Click Analysis">
+                      <img src="assets/reel-analyzer-2.png"
+                        alt="Reel Analyzer - Screenshot selected and ready for AI analysis" loading="lazy"
+                        class="carousel-img" />
+                    </div>
+                    <div class="carousel-slide" data-index="2" data-caption="03 // CONTENT INSIGHTS &amp; OCR RESULTS"
+                      data-sub="Classification &bull; AI Narrative Description &bull; Agentic Insights Breakdown">
+                      <img src="assets/reel-analyzer-3.png"
+                        alt="Reel Analyzer - AI Analysis Description and Category Classification Results" loading="lazy"
+                        class="carousel-img" />
+                    </div>
+                  </div>
+
+                  <!-- Navigation Arrows -->
+                  <button type="button" class="carousel-nav-btn prev-btn" id="reel-prev-btn" aria-label="Previous slide"
+                    title="Previous preview">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                  </button>
+                  <button type="button" class="carousel-nav-btn next-btn" id="reel-next-btn" aria-label="Next slide"
+                    title="Next preview">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                  </button>
+                </div>
+
+                <!-- Carousel Footer Bar -->
+                <div class="carousel-footer">
+                  <div class="carousel-indicators" id="reel-carousel-dots" role="tablist"
+                    aria-label="Reel Analyzer slide selector">
+                    <button type="button" class="carousel-dot active" data-index="0" role="tab"
+                      aria-label="Slide 1: Reel Upload" aria-selected="true">
+                      <span class="dot-progress"></span>
+                    </button>
+                    <button type="button" class="carousel-dot" data-index="1" role="tab"
+                      aria-label="Slide 2: Screenshot Selection" aria-selected="false">
+                      <span class="dot-progress"></span>
+                    </button>
+                    <button type="button" class="carousel-dot" data-index="2" role="tab"
+                      aria-label="Slide 3: Content Insights &amp; OCR" aria-selected="false">
+                      <span class="dot-progress"></span>
+                    </button>
+                  </div>
+                  <div class="carousel-actions">
+                    <button type="button" class="carousel-zoom-trigger" id="reel-zoom-btn"
+                      aria-label="View high-resolution preview" title="Click to view full size">
+                      <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <polyline points="9 21 3 21 3 15"></polyline>
+                        <line x1="21" y1="3" x2="14" y2="10"></line>
+                        <line x1="3" y1="21" x2="10" y2="14"></line>
+                      </svg>
+                      <span>EXPAND</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- PROJECT 05: PROJECT IRIS -->
+        <article class="editorial-project-row reveal-on-scroll" data-project="project-iris">
+          <div class="project-info-pane">
+            <span class="project-num">05</span>
             <div class="project-category-badge">COMPUTER VISION &bull; ROAD INTELLIGENCE</div>
             <h3 class="project-name">
               <span>PROJECT IRIS</span>
@@ -765,86 +936,6 @@
                     <button type="button" class="carousel-zoom-trigger" data-lightbox-single
                       data-lightbox-src="assets/iris-preview.png" data-lightbox-badge="IRIS // COMPUTER VISION"
                       data-lightbox-caption="01 // PROJECT IRIS — INDIAN ROAD INTELLIGENCE SYSTEM"
-                      aria-label="View high-resolution preview" title="Click to view full size">
-                      <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="15 3 21 3 21 9"></polyline>
-                        <polyline points="9 21 3 21 3 15"></polyline>
-                        <line x1="21" y1="3" x2="14" y2="10"></line>
-                        <line x1="3" y1="21" x2="10" y2="14"></line>
-                      </svg>
-                      <span>EXPAND</span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-
-
-        <!-- PROJECT 05: ZENET -->
-        <article class="editorial-project-row reveal-on-scroll" data-project="zenet">
-          <div class="project-info-pane">
-            <span class="project-num">05</span>
-            <div class="project-category-badge">AI &bull; WELLBEING</div>
-            <h3 class="project-name">
-              <span>ZENET</span>
-              <span class="project-arrow-icon" aria-hidden="true">&rarr;</span>
-            </h3>
-            <p class="project-lead">
-              An AI project exploring emotional intelligence and digital wellbeing .
-            </p>
-            <div class="project-meta-table">
-              <div class="meta-row">
-                <span class="mr-label">FOCUS</span>
-                <span class="mr-val">Sentiment Inference &amp; Guardrails</span>
-              </div>
-              <div class="meta-row">
-                <span class="mr-label">ROLE</span>
-                <span class="mr-val">AI Researcher</span>
-              </div>
-            </div>
-            <div class="project-tech-pills">
-              <span>AI</span>
-              <span>Machine Learning</span>
-              <span>LLM APIs</span>
-              <span>Python</span>
-              <span>Prompt Architecture</span>
-            </div>
-          </div>
-
-          <div class="project-visual-pane">
-            <div class="visual-canvas zenet-canvas" id="zenet-showcase-container">
-              <div class="visual-badge">ZENET // EMOTIONAL AI</div>
-
-              <div class="peek-carousel single-image-showcase" role="region" aria-label="Zenet Showcase">
-                <!-- Bar -->
-                <div class="peek-carousel-bar">
-                  <div class="carousel-status-indicator">
-                    <span class="carousel-status-dot" aria-hidden="true"></span>
-                    <span class="carousel-caption">01 // MENTAL HEALTH SUPPORT COMMUNITY</span>
-                  </div>
-                  <div class="carousel-counter">01 / 01</div>
-                </div>
-
-                <!-- Viewport -->
-                <div class="single-viewport zenet-viewport" data-lightbox-single data-lightbox-src="assets/zenet.png"
-                  data-lightbox-badge="ZENET // EMOTIONAL AI"
-                  data-lightbox-caption="01 // ZENET — A MENTAL HEALTH SUPPORT COMMUNITY">
-                  <img src="assets/zenet.png" alt="Zenet - A Mental Health Support Community" loading="lazy"
-                    class="single-img zenet-img" />
-                </div>
-
-                <!-- Footer -->
-                <div class="carousel-footer">
-                  <div class="single-showcase-meta font-mono">
-                    <span class="meta-tag">SENTIMENT INFERENCE &bull; EMPATHETIC GUARDRAILS</span>
-                  </div>
-                  <div class="carousel-actions">
-                    <button type="button" class="carousel-zoom-trigger" data-lightbox-single
-                      data-lightbox-src="assets/zenet.png" data-lightbox-badge="ZENET // EMOTIONAL AI"
-                      data-lightbox-caption="01 // ZENET — A MENTAL HEALTH SUPPORT COMMUNITY"
                       aria-label="View high-resolution preview" title="Click to view full size">
                       <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"
                         stroke-linecap="round" stroke-linejoin="round">
@@ -944,6 +1035,346 @@
       </div>
     </section>
 
+    <!-- ==================================================
+         SKILLS — TOOLS I WORK WITH (INTERACTIVE & ANIMATIVE)
+         ================================================== -->
+    <section class="skills-section" id="skills" aria-labelledby="skills-title">
+      <div class="content-container">
+
+        <div class="skills-header-row reveal-on-scroll">
+          <div>
+            <div class="section-label-top">
+              <span class="label-prefix">03</span>
+              <span class="label-slash">/</span>
+              <span class="label-title">EXPERTISE</span>
+            </div>
+            <h2 id="skills-title" class="skills-heading">
+              Tools I work with<span class="skills-dot">.</span>
+            </h2>
+          </div>
+
+          <!-- Interactive Skill Category Filter Chips -->
+          <div class="skills-filter-chips" role="tablist" aria-label="Filter tools by specialty">
+            <button type="button" class="skill-chip active" data-skill-cat="all" role="tab" aria-selected="true">
+              <span>ALL (16)</span>
+            </button>
+            <button type="button" class="skill-chip" data-skill-cat="ai" role="tab" aria-selected="false">
+              <span>AI &bull; CV &bull; LLMs</span>
+            </button>
+            <button type="button" class="skill-chip" data-skill-cat="backend" role="tab" aria-selected="false">
+              <span>BACKEND</span>
+            </button>
+            <button type="button" class="skill-chip" data-skill-cat="data" role="tab" aria-selected="false">
+              <span>DATA &amp; CLOUD</span>
+            </button>
+            <button type="button" class="skill-chip" data-skill-cat="frontend" role="tab" aria-selected="false">
+              <span>FRONTEND</span>
+            </button>
+            <button type="button" class="skill-chip" data-skill-cat="devops" role="tab" aria-selected="false">
+              <span>DEVOPS</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Interactive Animated Skills Cloud -->
+        <div class="skills-cloud-wrap reveal-on-scroll" id="skills-cloud">
+          <span class="skill-token" data-cat="backend ai"
+            data-desc="Core engineering language used across LLM agents, OpenCV pipelines, and backend APIs."
+            data-name="PYTHON">PYTHON</span>
+          <span class="skill-separator">/</span>
+          <span class="skill-token" data-cat="backend"
+            data-desc="High-performance asynchronous REST APIs &amp; WebSockets powering Peek AI and Briz."
+            data-name="FASTAPI">FASTAPI</span>
+          <span class="skill-separator">/</span>
+          <span class="skill-token" data-cat="backend"
+            data-desc="Event-driven JavaScript backend runtime for serverless functions &amp; tooling."
+            data-name="NODE.JS">NODE.JS</span>
+          <span class="skill-separator">/</span>
+          <span class="skill-token" data-cat="backend"
+            data-desc="Clean, modular web framework for microservices, routing, and middleware pipelines."
+            data-name="EXPRESS">EXPRESS</span>
+          <span class="skill-separator">/</span>
+          <span class="skill-token" data-cat="frontend"
+            data-desc="Component-based declarative architecture for reactive client-side applications."
+            data-name="REACT">REACT</span>
+          <span class="skill-separator">/</span>
+          <span class="skill-token" data-cat="frontend backend"
+            data-desc="Full-stack React framework with SSR, App Router, and server actions powering Zigsy."
+            data-name="NEXT.JS">NEXT.JS</span>
+          <span class="skill-separator">/</span>
+          <span class="skill-token" data-cat="data"
+            data-desc="Robust relational database engine for schema design, indexed queries, and ACID compliance."
+            data-name="POSTGRESQL">POSTGRESQL</span>
+          <span class="skill-separator">/</span>
+          <span class="skill-token" data-cat="data backend"
+            data-desc="Managed Postgres platform with Row Level Security (RLS), Auth triggers, and real-time streams."
+            data-name="SUPABASE">SUPABASE</span>
+          <span class="skill-separator">/</span>
+          <span class="skill-token" data-cat="data"
+            data-desc="Structured database manipulation, join optimizations, aggregation pipelines, and transactions."
+            data-name="SQL">SQL</span>
+          <span class="skill-separator">/</span>
+          <span class="skill-token" data-cat="devops"
+            data-desc="Containerization for isolated reproducible services, microservices, and deployments."
+            data-name="DOCKER">DOCKER</span>
+          <span class="skill-separator">/</span>
+          <span class="skill-token" data-cat="devops"
+            data-desc="Distributed version control, collaborative branch strategies, and CI/CD automation."
+            data-name="GIT">GIT</span>
+          <span class="skill-separator">/</span>
+          <span class="skill-token skill-highlight" data-cat="ai"
+            data-desc="Machine learning workflows, neural reasoning, and autonomous agent loops."
+            data-name="AI">AI</span>
+          <span class="skill-separator">/</span>
+          <span class="skill-token skill-highlight" data-cat="ai"
+            data-desc="Groq high-speed LLMs, OpenAI, Gemini prompt architectures and structured function calls."
+            data-name="LLM APIs">LLM APIs</span>
+          <span class="skill-separator">/</span>
+          <span class="skill-token skill-highlight" data-cat="ai"
+            data-desc="OpenCV, RTSP video streaming, bounding box inferences, and road condition analytics on IRIS."
+            data-name="COMPUTER VISION">COMPUTER VISION</span>
+          <span class="skill-separator">/</span>
+          <span class="skill-token skill-highlight" data-cat="ai"
+            data-desc="Optical character recognition on video frames for viral hook extraction and indexing in Peek AI."
+            data-name="OCR">OCR</span>
+          <span class="skill-separator">/</span>
+          <span class="skill-token skill-highlight" data-cat="ai"
+            data-desc="End-to-end intelligent pipelines connecting LLM classifiers with automated matching graphs."
+            data-name="AI AUTOMATION">AI AUTOMATION</span>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================================================
+         ACHIEVEMENTS — HORIZONTAL EDITORIAL CAROUSEL
+         ================================================== -->
+    <section class="achievements-section" id="achievements" aria-labelledby="achievements-title">
+      <div class="content-container">
+
+        <div class="achievements-header-block reveal-on-scroll">
+          <div class="achievements-header-top">
+            <div class="section-label-top">
+              <span class="label-prefix">04</span>
+              <span class="label-slash">/</span>
+              <span class="label-title">ACHIEVEMENTS</span>
+            </div>
+            <div class="achievements-meta-badge font-mono">
+              <span class="live-dot" aria-hidden="true"></span>
+              <span>06 RECOGNITIONS &bull; AWARDS &amp; CERTS</span>
+            </div>
+          </div>
+          <h2 id="achievements-title" class="achievements-title">
+            ACHIEVEMENTS<span class="heading-dot text-burgundy">.</span>
+          </h2>
+          <p class="achievements-subheading font-editorial">
+            "Competitions, hackathons, certifications, and leadership milestones along the way."
+          </p>
+        </div>
+
+        <!-- Horizontal Carousel Wrapper -->
+        <div class="achievements-carousel-wrapper reveal-on-scroll">
+          <div class="achievements-carousel-controls">
+            <div class="achievements-counter font-mono" id="achievements-counter">
+              <span class="text-burgundy">01</span> / 06
+            </div>
+            <div class="achievements-nav-btns">
+              <button type="button" class="achievements-nav-btn" id="achievements-prev-btn" aria-label="Previous achievement">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+              </button>
+              <button type="button" class="achievements-nav-btn" id="achievements-next-btn" aria-label="Next achievement">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="achievements-track" id="achievements-track" role="region" aria-label="Achievements horizontal carousel">
+
+            <!-- Card 01 -->
+            <article class="achievement-card" data-index="0" data-lightbox-src="achivement 1.png" data-lightbox-badge="CERTIFICATE // FULL STACK" data-lightbox-caption="Full Stack Mastery Certification — Nexus Of Nerds">
+              <div class="achievement-img-stage">
+                <img src="achivement 1.png" alt="Full Stack Mastery Certificate - Om Eshwar" class="achievement-card-img" loading="lazy">
+                <div class="achievement-zoom-pill font-mono">
+                  <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <polyline points="9 21 3 21 3 15"></polyline>
+                    <line x1="21" y1="3" x2="14" y2="10"></line>
+                    <line x1="3" y1="21" x2="10" y2="14"></line>
+                  </svg>
+                  <span>ZOOM</span>
+                </div>
+              </div>
+              <div class="achievement-card-body">
+                <div>
+                  <div class="achievement-card-top">
+                    <span class="achievement-card-badge">CERTIFICATE</span>
+                    <span class="achievement-card-date">NOV 2025</span>
+                  </div>
+                  <h3 class="achievement-card-title">Full Stack Mastery</h3>
+                  <div class="achievement-card-org">Nexus Of Nerds</div>
+                </div>
+                <p class="achievement-card-desc">
+                  Completed intensive training on modern web architectures, full stack mastery, and production software patterns.
+                </p>
+              </div>
+            </article>
+
+            <!-- Card 02 -->
+            <article class="achievement-card" data-index="1" data-lightbox-src="achivement 2.png" data-lightbox-badge="SELECTION // AI INTERNSHIP" data-lightbox-caption="AI Internship Selection at Reducate.ai — Internshala">
+              <div class="achievement-img-stage">
+                <img src="achivement 2.png" alt="Certificate of Selection for AI Internship at Reducate.ai" class="achievement-card-img" loading="lazy">
+                <div class="achievement-zoom-pill font-mono">
+                  <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <polyline points="9 21 3 21 3 15"></polyline>
+                    <line x1="21" y1="3" x2="14" y2="10"></line>
+                    <line x1="3" y1="21" x2="10" y2="14"></line>
+                  </svg>
+                  <span>ZOOM</span>
+                </div>
+              </div>
+              <div class="achievement-card-body">
+                <div>
+                  <div class="achievement-card-top">
+                    <span class="achievement-card-badge">SELECTION</span>
+                    <span class="achievement-card-date">AUG 2026</span>
+                  </div>
+                  <h3 class="achievement-card-title">AI Internship Selection</h3>
+                  <div class="achievement-card-org">Reducate.ai &bull; Internshala</div>
+                </div>
+                <p class="achievement-card-desc">
+                  Selected for Artificial Intelligence (AI) internship through competitive national evaluation from Vivekananda Global University.
+                </p>
+              </div>
+            </article>
+
+            <!-- Card 03 -->
+            <article class="achievement-card" data-index="2" data-lightbox-src="achivement 3.png" data-lightbox-badge="APPRECIATION // GENERATIVE AI" data-lightbox-caption="Certificate of Appreciation for AI Leadership — NxtWave">
+              <div class="achievement-img-stage">
+                <img src="achivement 3.png" alt="Certificate of Appreciation - Leadership Skills in AI for Students" class="achievement-card-img" loading="lazy">
+                <div class="achievement-zoom-pill font-mono">
+                  <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <polyline points="9 21 3 21 3 15"></polyline>
+                    <line x1="21" y1="3" x2="14" y2="10"></line>
+                    <line x1="3" y1="21" x2="10" y2="14"></line>
+                  </svg>
+                  <span>ZOOM</span>
+                </div>
+              </div>
+              <div class="achievement-card-body">
+                <div>
+                  <div class="achievement-card-top">
+                    <span class="achievement-card-badge">LEADERSHIP</span>
+                    <span class="achievement-card-date">JAN 2026</span>
+                  </div>
+                  <h3 class="achievement-card-title">Generative AI Leadership</h3>
+                  <div class="achievement-card-org">NxtWave &bull; Rahul Attuluri</div>
+                </div>
+                <p class="achievement-card-desc">
+                  Showcased leadership skills in the execution of 'AI for Students: Build Your Own Generative AI Model' workshop.
+                </p>
+              </div>
+            </article>
+
+            <!-- Card 04 -->
+            <article class="achievement-card" data-index="3" data-lightbox-src="achivement 4.png" data-lightbox-badge="TOP 100 // NATIONAL PITCH" data-lightbox-caption="Top 100 Business Idea & Pitching with Team Zenet — Innopreneurs">
+              <div class="achievement-img-stage">
+                <img src="achivement 4.png" alt="Innopreneurs Season 12 Certificate - Team Zenet Top 100" class="achievement-card-img" loading="lazy">
+                <div class="achievement-zoom-pill font-mono">
+                  <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <polyline points="9 21 3 21 3 15"></polyline>
+                    <line x1="21" y1="3" x2="14" y2="10"></line>
+                    <line x1="3" y1="21" x2="10" y2="14"></line>
+                  </svg>
+                  <span>ZOOM</span>
+                </div>
+              </div>
+              <div class="achievement-card-body">
+                <div>
+                  <div class="achievement-card-top">
+                    <span class="achievement-card-badge">TOP 100</span>
+                    <span class="achievement-card-date">OCT 2025</span>
+                  </div>
+                  <h3 class="achievement-card-title">Top 100 Business Idea</h3>
+                  <div class="achievement-card-org">Lemon Ideas &bull; Innopreneurs S12</div>
+                </div>
+                <p class="achievement-card-desc">
+                  Qualified to Top 100 Business Idea &amp; Pitching contest representing Team Zenet in a nationwide startup competition.
+                </p>
+              </div>
+            </article>
+
+            <!-- Card 05 -->
+            <article class="achievement-card" data-index="4" data-lightbox-src="achivement 5.png" data-lightbox-badge="CHAMPION // 1ST PLACE" data-lightbox-caption="1st Place Gold Medal Champions — Team Victory Photo">
+              <div class="achievement-img-stage">
+                <img src="achivement 5.png" alt="1st Place Gold Medal Winners with Teammates" class="achievement-card-img" loading="lazy">
+                <div class="achievement-zoom-pill font-mono">
+                  <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <polyline points="9 21 3 21 3 15"></polyline>
+                    <line x1="21" y1="3" x2="14" y2="10"></line>
+                    <line x1="3" y1="21" x2="10" y2="14"></line>
+                  </svg>
+                  <span>ZOOM</span>
+                </div>
+              </div>
+              <div class="achievement-card-body">
+                <div>
+                  <div class="achievement-card-top">
+                    <span class="achievement-card-badge" style="color: var(--accent-gold); border-color: rgba(178,147,91,0.4); background: rgba(178,147,91,0.1);">1ST PLACE</span>
+                    <span class="achievement-card-date">2025 &ndash; 2026</span>
+                  </div>
+                  <h3 class="achievement-card-title">1st Place Gold Medalists</h3>
+                  <div class="achievement-card-org">Tech Challenge &amp; Hackathon</div>
+                </div>
+                <p class="achievement-card-desc">
+                  Won 1st place gold medals with teammates after architecting and presenting the winning technological solution.
+                </p>
+              </div>
+            </article>
+
+            <!-- Card 06 -->
+            <article class="achievement-card" data-index="5" data-lightbox-src="achivement 6.png" data-lightbox-badge="HACKATHON // BUILDER" data-lightbox-caption="Takeover Hackathon Certificate — NIAT & NxtWave">
+              <div class="achievement-img-stage">
+                <img src="achivement 6.png" alt="Takeover Hackathon Certificate of Participation - Om Eshwar Achary" class="achievement-card-img" loading="lazy">
+                <div class="achievement-zoom-pill font-mono">
+                  <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <polyline points="9 21 3 21 3 15"></polyline>
+                    <line x1="21" y1="3" x2="14" y2="10"></line>
+                    <line x1="3" y1="21" x2="10" y2="14"></line>
+                  </svg>
+                  <span>ZOOM</span>
+                </div>
+              </div>
+              <div class="achievement-card-body">
+                <div>
+                  <div class="achievement-card-top">
+                    <span class="achievement-card-badge">HACKATHON</span>
+                    <span class="achievement-card-date">JUL 2026</span>
+                  </div>
+                  <h3 class="achievement-card-title">Takeover Hackathon</h3>
+                  <div class="achievement-card-org">NIAT &bull; NxtWave</div>
+                </div>
+                <p class="achievement-card-desc">
+                  Took on real-world engineering challenges, built under intense pressure, and successfully shipped during the Takeover Hackathon.
+                </p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
 
     <!-- ==================================================
          THE JOURNEY — EDITORIAL TIMELINE
@@ -954,7 +1385,7 @@
         <div class="journey-header-block reveal-on-scroll">
           <div class="journey-header-top">
             <div class="section-label-top">
-              <span class="label-prefix">03</span>
+              <span class="label-prefix">05</span>
               <span class="label-slash">/</span>
               <span class="label-title">MILESTONES</span>
             </div>
@@ -1058,17 +1489,18 @@
               </p>
             </div>
 
-            <!-- 05: 2025 Zenet -->
+            <!-- 05: 2025 Reel Analyzer -->
             <div class="timeline-step" data-year="2025" style="--step-idx: 4">
               <div class="step-card-header">
                 <span class="step-index font-mono">05</span>
-                <span class="milestone-badge">AI RESEARCH</span>
+                <span class="milestone-badge">AI / COMPUTER VISION</span>
               </div>
               <span class="step-year">2025</span>
               <div class="step-marker" aria-hidden="true"></div>
-              <h3 class="step-heading">ZENET</h3>
+              <h3 class="step-heading">REEL ANALYZER</h3>
               <p class="step-body">
-                Built an AI project exploring emotional intelligence and personalized digital wellbeing.
+                Built an AI-powered Instagram Reel analysis system focused on extracting content insights from video,
+                visuals, and text.
               </p>
             </div>
 
@@ -1148,7 +1580,7 @@
                 <span class="step-index font-mono">11</span>
                 <span class="milestone-badge badge-future">HORIZON</span>
               </div>
-              <span class="step-year font-editorial future-gradient-text">FUTURE</span>
+              <span class="step-year font-editorial future-gradient-text">NOW</span>
               <div class="step-marker marker-future" aria-hidden="true"></div>
               <h3 class="step-heading">BUILDING IMPACT</h3>
               <p class="step-body">
@@ -1161,121 +1593,6 @@
 
       </div>
     </section>
-
-
-    <!-- ==================================================
-         SKILLS — TOOLS I WORK WITH (INTERACTIVE & ANIMATIVE)
-         ================================================== -->
-    <section class="skills-section" id="skills" aria-labelledby="skills-title">
-      <div class="content-container">
-
-        <div class="skills-header-row reveal-on-scroll">
-          <div>
-            <div class="section-label-top">
-              <span class="label-prefix">04</span>
-              <span class="label-slash">/</span>
-              <span class="label-title">EXPERTISE</span>
-            </div>
-            <h2 id="skills-title" class="skills-heading">
-              Tools I work with.
-            </h2>
-          </div>
-
-          <!-- Interactive Skill Category Filter Chips -->
-          <div class="skills-filter-chips" role="tablist" aria-label="Filter tools by specialty">
-            <button type="button" class="skill-chip active" data-skill-cat="all" role="tab" aria-selected="true">
-              <span>ALL (16)</span>
-            </button>
-            <button type="button" class="skill-chip" data-skill-cat="ai" role="tab" aria-selected="false">
-              <span>AI &bull; CV &bull; LLMs</span>
-            </button>
-            <button type="button" class="skill-chip" data-skill-cat="backend" role="tab" aria-selected="false">
-              <span>BACKEND</span>
-            </button>
-            <button type="button" class="skill-chip" data-skill-cat="data" role="tab" aria-selected="false">
-              <span>DATA &amp; CLOUD</span>
-            </button>
-            <button type="button" class="skill-chip" data-skill-cat="frontend" role="tab" aria-selected="false">
-              <span>FRONTEND</span>
-            </button>
-            <button type="button" class="skill-chip" data-skill-cat="devops" role="tab" aria-selected="false">
-              <span>DEVOPS</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- Interactive Animated Skills Cloud -->
-        <div class="skills-cloud-wrap reveal-on-scroll" id="skills-cloud">
-          <span class="skill-token" data-cat="backend ai"
-            data-desc="Core engineering language used across LLM agents, OpenCV pipelines, and backend APIs."
-            data-name="PYTHON">PYTHON</span>
-          <span class="skill-separator">/</span>
-          <span class="skill-token" data-cat="backend"
-            data-desc="High-performance asynchronous REST APIs &amp; WebSockets powering Peek AI and Briz."
-            data-name="FASTAPI">FASTAPI</span>
-          <span class="skill-separator">/</span>
-          <span class="skill-token" data-cat="backend"
-            data-desc="Event-driven JavaScript backend runtime for serverless functions &amp; tooling."
-            data-name="NODE.JS">NODE.JS</span>
-          <span class="skill-separator">/</span>
-          <span class="skill-token" data-cat="backend"
-            data-desc="Clean, modular web framework for microservices, routing, and middleware pipelines."
-            data-name="EXPRESS">EXPRESS</span>
-          <span class="skill-separator">/</span>
-          <span class="skill-token" data-cat="frontend"
-            data-desc="Component-based declarative architecture for reactive client-side applications."
-            data-name="REACT">REACT</span>
-          <span class="skill-separator">/</span>
-          <span class="skill-token" data-cat="frontend backend"
-            data-desc="Full-stack React framework with SSR, App Router, and server actions powering Zigsy."
-            data-name="NEXT.JS">NEXT.JS</span>
-          <span class="skill-separator">/</span>
-          <span class="skill-token" data-cat="data"
-            data-desc="Robust relational database engine for schema design, indexed queries, and ACID compliance."
-            data-name="POSTGRESQL">POSTGRESQL</span>
-          <span class="skill-separator">/</span>
-          <span class="skill-token" data-cat="data backend"
-            data-desc="Managed Postgres platform with Row Level Security (RLS), Auth triggers, and real-time streams."
-            data-name="SUPABASE">SUPABASE</span>
-          <span class="skill-separator">/</span>
-          <span class="skill-token" data-cat="data"
-            data-desc="Structured database manipulation, join optimizations, aggregation pipelines, and transactions."
-            data-name="SQL">SQL</span>
-          <span class="skill-separator">/</span>
-          <span class="skill-token" data-cat="devops"
-            data-desc="Containerization for isolated reproducible services, microservices, and deployments."
-            data-name="DOCKER">DOCKER</span>
-          <span class="skill-separator">/</span>
-          <span class="skill-token" data-cat="devops"
-            data-desc="Distributed version control, collaborative branch strategies, and CI/CD automation."
-            data-name="GIT">GIT</span>
-          <span class="skill-separator">/</span>
-          <span class="skill-token skill-highlight" data-cat="ai"
-            data-desc="Machine learning workflows, neural reasoning, and autonomous agent loops."
-            data-name="AI">AI</span>
-          <span class="skill-separator">/</span>
-          <span class="skill-token skill-highlight" data-cat="ai"
-            data-desc="Groq high-speed LLMs, OpenAI, Gemini prompt architectures and structured function calls."
-            data-name="LLM APIs">LLM APIs</span>
-          <span class="skill-separator">/</span>
-          <span class="skill-token skill-highlight" data-cat="ai"
-            data-desc="OpenCV, RTSP video streaming, bounding box inferences, and road condition analytics on IRIS."
-            data-name="COMPUTER VISION">COMPUTER VISION</span>
-          <span class="skill-separator">/</span>
-          <span class="skill-token skill-highlight" data-cat="ai"
-            data-desc="Optical character recognition on video frames for viral hook extraction and indexing in Peek AI."
-            data-name="OCR">OCR</span>
-          <span class="skill-separator">/</span>
-          <span class="skill-token skill-highlight" data-cat="ai"
-            data-desc="End-to-end intelligent pipelines connecting LLM classifiers with automated matching graphs."
-            data-name="AI AUTOMATION">AI AUTOMATION</span>
-        </div>
-
-
-
-      </div>
-    </section>
-
 
     <!-- ==================================================
          CURRENT FOCUS — RIGHT NOW
@@ -1307,7 +1624,7 @@
       <div class="philosophy-inner reveal-on-scroll">
 
         <div class="phil-label">
-          <span>05 // CREDO</span>
+          <span>07 // CREED</span>
         </div>
 
         <blockquote class="phil-quote">
@@ -1333,7 +1650,7 @@
         <div class="contact-editorial-wrap reveal-on-scroll">
 
           <div class="section-label-top">
-            <span class="label-prefix">06</span>
+            <span class="label-prefix">08</span>
             <span class="label-slash">/</span>
             <span class="label-title">GET IN TOUCH</span>
           </div>

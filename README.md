@@ -6,8 +6,9 @@ Personal portfolio of **Om Eshwar Achary**, AI & Backend Developer based in Jaip
 - **Briz** — Platform connecting students with startups, verified skill passports, and internship opportunities.
 - **Peek AI** — National Finalist AI-powered Instagram Reel analyzer & creator workspace.
 - **Zigsy** — Peer-to-peer Gen Z fashion discovery and rental marketplace.
+- **Reel Analyzer** — AI-powered tool analyzing Instagram Reels, visual content, captions, and audio for creators.
 - **IRIS** — Intelligent Road Incident & Safety surveillance system.
-- **Zenet** — Next-generation developer and infrastructure tooling.
+- **Techverse** — Student technology builder community and ecosystem.
 
 ## Tech Stack
 - **Frontend**: Semantic HTML5, Vanilla CSS (Editorial Design System), JavaScript (ES6+)

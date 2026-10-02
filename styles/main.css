@@ -986,6 +986,113 @@ img, svg {
   border: 1px solid rgba(23, 23, 23, 0.06);
 }
 
+/* Project Actions & Direct Links */
+.project-title-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--duration-fast) var(--ease-editorial);
+}
+
+.project-title-link:hover {
+  color: var(--accent-burgundy);
+}
+
+.project-actions-row {
+  margin-top: 1.75rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.project-action-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.75rem 1.35rem;
+  background-color: #161619;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+  color: #f3f0e8;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  line-height: 1;
+  transition: all var(--duration-fast) var(--ease-editorial);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+.project-action-link svg {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  display: block;
+  fill: currentColor;
+  transition: transform var(--duration-fast) var(--ease-editorial);
+}
+
+.project-action-link .action-arrow {
+  display: inline-block;
+  font-size: 0.875rem;
+  line-height: 1;
+  color: var(--accent-gold);
+  transition: transform var(--duration-fast) var(--ease-editorial);
+}
+
+.project-action-link:hover {
+  background-color: var(--accent-burgundy);
+  border-color: var(--accent-burgundy);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(101, 31, 50, 0.4);
+}
+
+.project-action-link:hover .action-arrow {
+  color: #ffffff;
+  transform: translateX(4px);
+}
+
+.project-action-link:hover svg {
+  transform: scale(1.1);
+}
+
+.project-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.75rem 1.35rem;
+  background-color: rgba(101, 31, 50, 0.08);
+  border: 1px solid rgba(101, 31, 50, 0.25);
+  border-radius: 4px;
+  color: var(--accent-burgundy);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  box-shadow: 0 2px 8px rgba(101, 31, 50, 0.06);
+}
+
+.status-pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--accent-burgundy);
+  box-shadow: 0 0 10px rgba(101, 31, 50, 0.7);
+  animation: statusPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes statusPulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.8); }
+}
+
 /* Project Visual Pane */
 .project-visual-pane {
   position: relative;
@@ -1031,7 +1138,7 @@ img, svg {
 .peek-canvas .visual-badge,
 .zigsy-canvas .visual-badge,
 .iris-canvas .visual-badge,
-.zenet-canvas .visual-badge,
+.reel-canvas .visual-badge,
 .techverse-canvas .visual-badge {
   top: 1.25rem;
   right: 1.25rem;
@@ -1047,7 +1154,7 @@ img, svg {
 .peek-canvas,
 .zigsy-canvas,
 .iris-canvas,
-.zenet-canvas,
+.reel-canvas,
 .techverse-canvas {
   padding: 0.85rem;
   background-color: var(--bg-secondary);
@@ -1056,6 +1163,7 @@ img, svg {
 .briz-carousel,
 .peek-carousel,
 .zigsy-carousel,
+.reel-carousel,
 .single-image-showcase {
   position: relative;
   width: 100%;
@@ -1068,7 +1176,7 @@ img, svg {
   overflow: hidden;
 }
 
-/* Single Image Showcase Frames (IRIS, ZENET, TECHVERSE) */
+/* Single Image Showcase Frames (IRIS, TECHVERSE) */
 .single-viewport {
   position: relative;
   width: 100%;
@@ -1108,17 +1216,37 @@ img, svg {
   box-shadow: 0 10px 32px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(78, 138, 240, 0.2);
 }
 
-/* ZENET Showcase Viewport */
-.zenet-viewport {
-  background: radial-gradient(circle at center, #ffffff 0%, #edeae1 100%);
+/* REEL ANALYZER Showcase Presentation */
+.reel-carousel .carousel-viewport {
+  aspect-ratio: 16 / 10;
+  background: radial-gradient(circle at center, #1b202c 0%, #0d0f14 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.zenet-img {
-  max-height: 84% !important;
-  border-radius: 8px;
-  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(0, 0, 0, 0.06);
-  padding: 0.85rem 1.5rem;
-  background: #ffffff;
+.reel-carousel .carousel-slide {
+  padding: 0.65rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reel-carousel .carousel-img {
+  width: auto;
+  max-width: 95%;
+  height: auto;
+  max-height: 94%;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 6px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.08);
+  filter: contrast(102%) brightness(99%);
+}
+
+.reel-carousel .carousel-viewport:hover .carousel-slide.active .carousel-img {
+  transform: scale(1.02);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(101, 31, 50, 0.35);
 }
 
 /* TECHVERSE Showcase Viewport */
@@ -2032,8 +2160,17 @@ img, svg {
   font-size: clamp(2.5rem, 4.5vw, 4rem);
   font-weight: 800;
   letter-spacing: -0.04em;
-  color: var(--text-primary);
-  line-height: 1;
+  color: var(--accent-burgundy);
+  line-height: 1.1;
+  display: inline-block;
+  position: relative;
+  background: linear-gradient(180deg, transparent 66%, rgba(101, 31, 50, 0.13) 66%);
+  padding: 0 0.08em;
+  border-radius: 2px;
+}
+
+.skills-heading .skills-dot {
+  color: var(--accent-gold);
 }
 
 /* Skill Filter Chips */
@@ -2129,6 +2266,291 @@ img, svg {
 }
 
 
+
+/* --------------------------------------------------------------------------
+   Achievements Section (Horizontal Editorial Carousel)
+   -------------------------------------------------------------------------- */
+.achievements-section {
+  padding: clamp(5rem, 8vw, 8rem) 0;
+  border-bottom: 1px solid var(--border-hairline);
+  background-color: var(--bg-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.achievements-header-block {
+  margin-bottom: 3.5rem;
+}
+
+.achievements-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.achievements-meta-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--accent-burgundy);
+  background: rgba(101, 31, 50, 0.06);
+  border: 1px solid rgba(101, 31, 50, 0.18);
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+}
+
+.achievements-meta-badge .live-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--accent-burgundy);
+  box-shadow: 0 0 8px rgba(101, 31, 50, 0.8);
+  animation: radarPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.achievements-title {
+  font-size: clamp(2.5rem, 4.5vw, 4rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: var(--text-primary);
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+.achievements-subheading {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+}
+
+/* Horizontal Carousel Wrapper */
+.achievements-carousel-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.achievements-carousel-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.75rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-hairline);
+}
+
+.achievements-counter {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--text-secondary);
+}
+
+.achievements-nav-btns {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.achievements-nav-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--border-strong);
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--ease-editorial);
+}
+
+.achievements-nav-btn:hover {
+  background: var(--accent-burgundy);
+  border-color: var(--accent-burgundy);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(101, 31, 50, 0.25);
+}
+
+/* Scrollable Horizontal Track */
+.achievements-track {
+  display: flex;
+  gap: 1.75rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding-bottom: 2rem;
+  padding-top: 0.5rem;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-strong) transparent;
+}
+
+.achievements-track::-webkit-scrollbar {
+  height: 4px;
+}
+
+.achievements-track::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.achievements-track::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 4px;
+}
+
+.achievements-track::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-burgundy);
+}
+
+/* Individual Achievement Card */
+.achievement-card {
+  flex: 0 0 clamp(300px, 34vw, 420px);
+  scroll-snap-align: start;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-hairline);
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--duration-normal) var(--ease-editorial),
+              box-shadow var(--duration-normal) var(--ease-editorial),
+              border-color var(--duration-normal) var(--ease-editorial);
+  cursor: pointer;
+}
+
+.achievement-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px -12px rgba(23, 23, 23, 0.12);
+  border-color: rgba(101, 31, 50, 0.35);
+}
+
+.achievement-img-stage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 11;
+  background: #f0ece3;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border-hairline);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.achievement-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 0.6s var(--ease-editorial);
+}
+
+.achievement-card:hover .achievement-card-img {
+  transform: scale(1.04);
+}
+
+.achievement-zoom-pill {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(23, 22, 20, 0.78);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #ffffff;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: all var(--duration-fast) var(--ease-editorial);
+  pointer-events: none;
+}
+
+.achievement-card:hover .achievement-zoom-pill {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.achievement-card-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.achievement-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.achievement-card-badge {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--accent-burgundy);
+  background: rgba(101, 31, 50, 0.08);
+  border: 1px solid rgba(101, 31, 50, 0.2);
+  padding: 0.2rem 0.55rem;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.achievement-card-date {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.achievement-card-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin-bottom: 0.35rem;
+  line-height: 1.25;
+  transition: color var(--duration-fast);
+}
+
+.achievement-card:hover .achievement-card-title {
+  color: var(--accent-burgundy);
+}
+
+.achievement-card-org {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--accent-gold);
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.02em;
+}
+
+.achievement-card-desc {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+@media (max-width: 768px) {
+  .achievement-card {
+    flex: 0 0 85vw;
+  }
+}
 
 /* --------------------------------------------------------------------------
    11. Current Focus (Right Now)
